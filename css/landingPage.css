@@ -1,0 +1,51 @@
+.bgimg {
+    display: block;
+    background-size: auto;
+}
+  
+.bgimg::after {
+    content: "";
+    background: url("../assets/bgperpus.jpg");
+    opacity: 0.85;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: -1;   
+}
+
+.quotes {
+    padding: 10px;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+}
+.centerobject{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    flex-direction: column;
+    color: white;
+    text-shadow: 3px 3px black;
+}
+li a{
+    color: white;
+}
+.nav-link{
+    color: white;
+}
+
+.credit{
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    text-shadow: 3px 3px black;
+}
+
+.credit span{
+    color:var(--green);
+}

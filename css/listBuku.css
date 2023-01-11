@@ -1,0 +1,45 @@
+.bgimg {
+    display: block;
+    background-size: auto;
+}
+  
+.bgimg::after {
+    content: "";
+    background: url("../assets/buku.jpg");
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+}
+
+.top-content {
+    text-align: center;
+    color: white;
+    padding: 30px;
+    text-shadow: 1px 1px black;
+}
+
+.table {
+    color: white;
+    text-shadow: 1px 1px black;
+    text-align: center;
+}
+
+.content-white {
+    color: white;
+    text-shadow: 1px 1px black;
+    text-align: center;
+}
+
+li a{
+    color: white;
+}
+
+.nav-link{
+    color: white;
+}
+
+
