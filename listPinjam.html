@@ -75,30 +75,32 @@
             </div>
           </div>
 
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>Nama Peminjam</th>
-                    <th>ID Buku</th>
-                    <th>Judul Buku</th>
-                    <th>Tanggal Pinjam</th>
-                    <th>Tanggal Pengembalian</th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody class="content-white">
-                <tr v-for="data in dataPeminjam">
-                    <td>{{data.nama_peminjam }}</td>
-                    <td>{{data.id_buku}}</td>
-                    <td>{{data.nama_buku}}</td>
-                    <td>{{data.tanggal_pinjam}}</td>
-                    <td>{{data.tanggal_pengembalian}}</td>
-                    <td>
-                        <button v-on:click="deletePeminjam(data._id)" type="button" class="btn btndelete btn-primary" id="btnDelete">Hapus</button>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="table-responsive">
+            <table class="table table-dark">
+                <thead>
+                    <tr>
+                        <th>Nama Peminjam</th>
+                        <th>ID Buku</th>
+                        <th>Judul Buku</th>
+                        <th>Tanggal Pinjam</th>
+                        <th>Tanggal Pengembalian</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody class="content-white">
+                    <tr v-for="data in dataPeminjam">
+                        <td>{{data.nama_peminjam }}</td>
+                        <td>{{data.id_buku}}</td>
+                        <td>{{data.nama_buku}}</td>
+                        <td>{{data.tanggal_pinjam}}</td>
+                        <td>{{data.tanggal_pengembalian}}</td>
+                        <td>
+                            <button v-on:click="deletePeminjam(data._id)" type="button" class="btn btndelete btn-primary" id="btnDelete">Hapus</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
